@@ -21,11 +21,12 @@ public class PlayerController : MonoBehaviour
     new private Collider2D collider;
     private RaycastHit2D[] hits = new RaycastHit2D[1];
     private float groundDistanceCheck = 0.02f;
-
+    private Animator animator;
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         collider = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -54,7 +55,15 @@ public class PlayerController : MonoBehaviour
         {
             playerRigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+        if (Input.GetKey(KeyCode.J))
+        {
+            animator.SetTrigger("attack");
+        }
 
+        // Update animator system
+        animator.SetFloat("xSpeed", Mathf.Abs(playerRigidbody.velocity.x));
+        animator.SetFloat("yVelocity", playerRigidbody.velocity.y);
+        animator.SetBool("isOnGround", isOnGround);
     }
 
     private void FixedUpdate()

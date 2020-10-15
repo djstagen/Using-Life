@@ -1,27 +1,49 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health = 10;
+    public int health;
+    public float speed;
+    public float flashTime;
+    public GameObject deadEnemyLand;
+    public GameObject particles;
+    Color originalColor;
+    public SpriteRenderer sRenderer;
 
-    public GameObject deathEffect;
+    void Start()
+    {
+        originalColor = sRenderer.color;
+    }
+
+    void Update()
+    {
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+            Instantiate(deadEnemyLand, transform.position,Quaternion.identity);
+        }
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
+    }
+
+
 
     public void TakeDamage(int damage)
     {
         health -= damage;
-
-        if (health <= 0)
-        {
-            Die();
-        }
+        Debug.Log("damage was dealt to enemy");
+        Instantiate(particles, transform.position, Quaternion.identity);
     }
 
-    void Die()
+    void FlashRed()
     {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        sRenderer.color = Color.red;
+        Invoke("ResetColor", flashTime);
+    }
+
+    void ResetColor()
+    {
+        sRenderer.color = originalColor;
     }
 }
