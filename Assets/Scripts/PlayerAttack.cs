@@ -12,6 +12,10 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange;
     public int damage;
 
+    public GameObject attackParticles;
+
+
+
     //code referenced from blackthornprod
 
     private void Update()
@@ -20,11 +24,12 @@ public class PlayerAttack : MonoBehaviour
         {
             if(Input.GetKey(KeyCode.J))
             {
-                
+                Instantiate(attackParticles, attackPosition.position, Quaternion.identity);
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, whatIsEnemy);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<Enemy>().TakeDamage (damage);
+                    
                 }
             }
             timeAttackCD = startAttacktime;
