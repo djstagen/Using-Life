@@ -33,12 +33,14 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
         Debug.Log("damage was dealt to enemy");
-        Instantiate(particles, transform.position, Quaternion.identity);
+        FlashRed();
+        //Instantiate(particles, transform.position, Quaternion.identity);
+
     }
 
     void FlashRed()
     {
-        sRenderer.color = Color.red;
+        sRenderer.material.color = Color.red;
         Invoke("ResetColor", flashTime);
     }
 

@@ -22983,7 +22983,7 @@ GameObject:
   - component: {fileID: 1631003883}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23463,7 +23463,7 @@ PrefabInstance:
     - target: {fileID: 4739041801804227858, guid: 91ba1c788391ac142af63eb606042b7a,
         type: 3}
       propertyPath: flashTime
-      value: 34
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4739041801804227862, guid: 91ba1c788391ac142af63eb606042b7a,
         type: 3}
