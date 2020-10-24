@@ -22924,6 +22924,11 @@ PrefabInstance:
       propertyPath: sRenderer
       value: 
       objectReference: {fileID: 1663155763}
+    - target: {fileID: 4739041801804227858, guid: 91ba1c788391ac142af63eb606042b7a,
+        type: 3}
+      propertyPath: flashTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4739041801804227859, guid: 91ba1c788391ac142af63eb606042b7a,
         type: 3}
       propertyPath: m_Mass
@@ -23463,7 +23468,7 @@ PrefabInstance:
     - target: {fileID: 4739041801804227858, guid: 91ba1c788391ac142af63eb606042b7a,
         type: 3}
       propertyPath: flashTime
-      value: 4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4739041801804227862, guid: 91ba1c788391ac142af63eb606042b7a,
         type: 3}

@@ -145,5 +145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 17
   speed: 0
+  flashTime: 0.14
   deadEnemyLand: {fileID: 8208074352555597162, guid: 7c777772208a80245bba0ffd1efb770a,
     type: 3}
+  particles: {fileID: 0}
+  sRenderer: {fileID: 0}

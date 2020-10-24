@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
 
 
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, float timer)
     {
         health -= damage;
         Debug.Log("damage was dealt to enemy");
@@ -46,6 +46,6 @@ public class Enemy : MonoBehaviour
 
     void ResetColor()
     {
-        sRenderer.color = originalColor;
+        sRenderer.material.color = originalColor;
     }
 }
