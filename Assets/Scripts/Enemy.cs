@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public GameObject particles;
     Color originalColor;
     public SpriteRenderer sRenderer;
+    public bool MoveLeft;
 
     void Start()
     {
@@ -24,7 +25,16 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             Instantiate(deadEnemyLand, transform.position,Quaternion.identity);
         }
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        if(MoveLeft)
+        {
+            transform.Translate(Vector2.left * speed * Time.deltaTime);
+            transform.localScale = new Vector2(1,1);
+        }
+        else
+        {
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            transform.localScale = new Vector2(-1, 1);
+        }
     }
 
 
@@ -47,5 +57,20 @@ public class Enemy : MonoBehaviour
     void ResetColor()
     {
         sRenderer.material.color = originalColor;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("turn"))
+        {
+            if(MoveLeft)
+            {
+                MoveLeft = false;
+            }
+            else
+            {
+                MoveLeft = true;
+            }
+        }
     }
 }
