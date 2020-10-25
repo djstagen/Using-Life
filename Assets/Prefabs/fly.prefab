@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -879123262689675114}
   - component: {fileID: -7830926616924824662}
   - component: {fileID: 5923820555861029029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,13 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57696941c874b4d9b17fddbb180a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 12
   speed: 1
-  flashTime: 0.15
+  flashTime: 0.1
   deadEnemyLand: {fileID: 387569224290838255, guid: 87ba83cb545750e43bfa1c77bec050c0,
     type: 3}
-  particles: {fileID: 387569224290838255, guid: 87ba83cb545750e43bfa1c77bec050c0,
-    type: 3}
-  sRenderer: {fileID: 1983302427430705997, guid: 87ba83cb545750e43bfa1c77bec050c0,
-    type: 3}
-  MoveLeft: 1
+  particles: {fileID: 6916888454295997786}
+  sRenderer: {fileID: 2394741946441950972}
+  MoveLeft: 0
