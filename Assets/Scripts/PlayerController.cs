@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("AirMovement")]
     [Tooltip("The Upwards force the player jumps.")]
-    [Range(0f, 10f)]
+    [Range(0f, 1f)]
     [SerializeField]
     private float jumpForce = 0;
 
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool isOnGround = true;
     new private Collider2D collider;
     private RaycastHit2D[] hits = new RaycastHit2D[1];
-    private float groundDistanceCheck = 0.02f;
+    private float groundDistanceCheck = 0.01f;
     private Animator animator;
     void Start()
     {
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
         //Jump Logic
         //Check for landing on the ground
-        int numHits = collider.Cast(Vector2.down, hits, 1f);
+        int numHits = collider.Cast(Vector2.down, hits, 0.1f);
         isOnGround = numHits > 0;
         //Debugging
         Vector2 rayStart = new Vector2(collider.bounds.center.x, collider.bounds.min.y);

@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, whatIsEnemy);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage (damage);
+                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage (damage, 0.1f);
                     
                 }
             }
