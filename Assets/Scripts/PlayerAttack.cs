@@ -29,7 +29,8 @@ public class PlayerAttack : MonoBehaviour
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<Enemy>().TakeDamage (damage, 0.1f);
-                    
+                    enemiesToDamage[i].GetComponent<SpawnMore>().GetHitSplit(damage, 20f);
+
                 }
             }
             timeAttackCD = startAttacktime;

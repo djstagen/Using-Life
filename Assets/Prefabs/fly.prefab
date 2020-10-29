@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -879123262689675114}
   - component: {fileID: -7830926616924824662}
   - component: {fileID: 5923820555861029029}
+  - component: {fileID: -1180445760416215066}
   m_Layer: 8
   m_Name: fly
   m_TagString: Untagged
@@ -97,7 +98,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.008354157, y: -0.07017505}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -108,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 1.0293751, y: 0.6317167}
   m_EdgeRadius: 0
 --- !u!50 &-7830926616924824662
 Rigidbody2D:
@@ -144,10 +145,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 12
-  speed: 1
+  speed: 2
   flashTime: 0.1
   deadEnemyLand: {fileID: 387569224290838255, guid: 87ba83cb545750e43bfa1c77bec050c0,
     type: 3}
   particles: {fileID: 6916888454295997786}
   sRenderer: {fileID: 2394741946441950972}
   MoveLeft: 0
+--- !u!114 &-1180445760416215066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916888454295997786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868f2f00f1270484b8f6863c4de5fb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particles: {fileID: 6916888454295997786}
