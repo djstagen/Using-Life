@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField]
+    private int scale = 1;
+
     public int health;
     public float speed;
     public float flashTime;
@@ -12,6 +15,7 @@ public class Enemy : MonoBehaviour
     Color originalColor;
     public SpriteRenderer sRenderer;
     public bool MoveLeft;
+    
 
     void Start()
     {
@@ -28,12 +32,12 @@ public class Enemy : MonoBehaviour
         if(MoveLeft)
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
-            transform.localScale = new Vector2(1,1);
+            transform.localScale = new Vector2(scale,scale);
         }
         else
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-scale, scale);
         }
     }
 

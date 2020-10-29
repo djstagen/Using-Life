@@ -143,10 +143,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57696941c874b4d9b17fddbb180a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 2
   health: 17
   speed: 0
   flashTime: 0.14
   deadEnemyLand: {fileID: 8208074352555597162, guid: 7c777772208a80245bba0ffd1efb770a,
     type: 3}
-  particles: {fileID: 0}
-  sRenderer: {fileID: 0}
+  particles: {fileID: 7178258185378886569, guid: 31a02ee50d62447479000d8f646dc7f3,
+    type: 3}
+  sRenderer: {fileID: 4739041801804227862}
+  MoveLeft: 0
