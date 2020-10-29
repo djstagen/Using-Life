@@ -691,7 +691,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122664185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.17, y: -2.24, z: -10}
+  m_LocalPosition: {x: 2.32, y: 1.51, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -25073,6 +25073,7 @@ GameObject:
   - component: {fileID: 1631003877}
   - component: {fileID: 1631003882}
   - component: {fileID: 1631003883}
+  - component: {fileID: 1631003884}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -25199,7 +25200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631003876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.17, y: -3.45, z: 0}
+  m_LocalPosition: {x: 2.32, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1515057815}
@@ -25246,6 +25247,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1631003884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631003876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75fbb336b374b1447900aa72cd5fd5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealTime: 0.5
+  healPosition: {fileID: 1515057815}
+  whatIsDeadBody:
+    serializedVersion: 2
+    m_Bits: 512
+  healRange: 1
+  heal: 1
+  healParticles: {fileID: 540823785192218009, guid: 42f13f42331502d41831a563434b6087,
+    type: 3}
 --- !u!4 &1658851733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3393284031587431410, guid: 698752dda30bc6d4f9202020ec72cf5c,
@@ -25318,7 +25340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708197102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.17, y: -2.24, z: -10}
+  m_LocalPosition: {x: 2.32, y: 1.51, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 568319628}

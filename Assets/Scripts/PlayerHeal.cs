@@ -24,9 +24,14 @@ public class PlayerHeal : MonoBehaviour
                 Collider2D[] enemiesToHeal = Physics2D.OverlapCircleAll(healPosition.position, healRange, whatIsDeadBody);
                 for (int i = 0; i < enemiesToHeal.Length; i++)
                 {
-
+                    enemiesToHeal[i].GetComponent<DeadEnemy>().RecieveHeal(-1,0.1f);
                 }
             }
+            timeHealCD = startHealTime;
+        }
+        else
+        {
+            timeHealCD -= Time.deltaTime; 
         }
     }
 }
