@@ -22,6 +22,10 @@ public class Enemy : MonoBehaviour
         originalColor = sRenderer.color;
     }
 
+    /// <summary>
+    /// update object when health reaches a certain parameter.
+    /// creates new object (ex. dead body)
+    /// </summary>
     void Update()
     {
         if(health <= 0)
@@ -42,7 +46,11 @@ public class Enemy : MonoBehaviour
     }
 
 
-
+    /// <summary>
+    /// How player attack uses enemy script
+    /// </summary>
+    /// <param name="damage"></param> amount of damage enemy recieves when attacked
+    /// <param name="timer"></param> destroys object after this time
     public void TakeDamage(int damage, float timer)
     {
         health -= damage;
@@ -52,6 +60,9 @@ public class Enemy : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// flashes red on hit and reverts
+    /// </summary>
     void FlashRed()
     {
         sRenderer.material.color = Color.red;
@@ -63,6 +74,10 @@ public class Enemy : MonoBehaviour
         sRenderer.material.color = originalColor;
     }
 
+    /// <summary>
+    /// turns object around after hitting certain point.
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("turn"))
