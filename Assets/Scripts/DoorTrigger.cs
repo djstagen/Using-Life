@@ -26,6 +26,10 @@ public class DoorTrigger : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Opens door for any object with the tags below when tags enter trigger area.
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
