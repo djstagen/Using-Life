@@ -6,7 +6,9 @@ public class DeadEnemy : MonoBehaviour
 {
     public int health = -1;
     public GameObject revivedEnemy;
-
+    /// <summary>
+    /// Allows enemies to be instantiated when "healed"
+    /// </summary>
     void Update()
     {
         if (health >= 0)
