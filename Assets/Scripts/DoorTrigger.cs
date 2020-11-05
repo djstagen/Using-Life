@@ -44,10 +44,10 @@ public class DoorTrigger : MonoBehaviour
         {
             door.CloseDoor();
         }
-        else if (collision.CompareTag("Player"))
-        {
-            door.CloseDoor();
-        }
+        //else if (collision.CompareTag("Player"))
+        //{
+        //    door.CloseDoor();
+        //}
 
     }
 }
