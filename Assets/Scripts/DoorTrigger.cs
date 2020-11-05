@@ -28,9 +28,26 @@ public class DoorTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<CharacterController>() != null)
+        if (collision.CompareTag("Enemy"))
         {
             door.OpenDoor();
         }
+        else if (collision.CompareTag("Player"))
+        {
+            door.OpenDoor();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            door.CloseDoor();
+        }
+        else if (collision.CompareTag("Player"))
+        {
+            door.CloseDoor();
+        }
+
     }
 }
