@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1983302427430705997}
   - component: {fileID: -6412464030093695012}
   - component: {fileID: 7842948940058904742}
-  - component: {fileID: -5973068465566810259}
-  m_Layer: 0
+  - component: {fileID: -3254000969690302112}
+  m_Layer: 9
   m_Name: fly_move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
---- !u!114 &-5973068465566810259
+--- !u!114 &-3254000969690302112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,13 +140,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 387569224290838255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed57696941c874b4d9b17fddbb180a89, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0826eae9cb5b54ca695addf143e44b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
-  speed: 0
-  flashTime: 1
-  deadEnemyLand: {fileID: 387569224290838255}
-  particles: {fileID: 387569224290838255}
-  sRenderer: {fileID: 1983302427430705997}
-  MoveLeft: 1
+  health: -1
+  revivedEnemy: {fileID: 6916888454295997786, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
+    type: 3}

@@ -18,6 +18,10 @@ public class PlayerAttack : MonoBehaviour
 
     //code referenced from blackthornprod
 
+        /// <summary>
+        /// Take damage is for Enemy script
+        /// GetHitSplit is for SpawnMore script
+        /// </summary>
     private void Update()
     {
         if (timeAttackCD <= 0)
