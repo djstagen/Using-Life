@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     public int health;
     public float speed;
+    public float ySpeed;
     public float flashTime;
     public GameObject deadEnemyLand;
     public GameObject particles;
@@ -37,12 +38,16 @@ public class Enemy : MonoBehaviour
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
             transform.localScale = new Vector2(scale,scale);
+            transform.Translate(Vector2.up * ySpeed * Time.deltaTime);
         }
         else
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
             transform.localScale = new Vector2(-scale, scale);
+            transform.Translate(Vector2.up * ySpeed * Time.deltaTime);
+
         }
+
     }
 
 
