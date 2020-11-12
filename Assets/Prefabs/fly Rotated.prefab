@@ -82,5 +82,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fly Rotated
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1180445760416215066, guid: f39f58346b7aa0c47a7a9ee43c0e7d87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f39f58346b7aa0c47a7a9ee43c0e7d87, type: 3}
