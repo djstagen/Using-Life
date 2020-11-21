@@ -27,6 +27,12 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.9352063
       objectReference: {fileID: 0}
+    - target: {fileID: -3254000969690302112, guid: 87ba83cb545750e43bfa1c77bec050c0,
+        type: 3}
+      propertyPath: revivedEnemy
+      value: 
+      objectReference: {fileID: 3145354497957199210, guid: 70923dd700f3e5748a81ceccde2d77da,
+        type: 3}
     - target: {fileID: 387569224290838255, guid: 87ba83cb545750e43bfa1c77bec050c0,
         type: 3}
       propertyPath: m_Name
