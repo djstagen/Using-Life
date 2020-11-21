@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     Color originalColor;
     public SpriteRenderer sRenderer;
     public bool MoveLeft;
-    
+
 
     void Start()
     {
@@ -29,15 +29,15 @@ public class Enemy : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if(health <= 0)
+        if (health <= 0)
         {
             Destroy(gameObject);
-            Instantiate(deadEnemyLand, transform.position,Quaternion.identity);
+            Instantiate(deadEnemyLand, transform.position, Quaternion.identity);
         }
-        if(MoveLeft)
+        if (MoveLeft)
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
-            transform.localScale = new Vector2(scale,scale);
+            transform.localScale = new Vector2(scale, scale);
             transform.Translate(Vector2.up * ySpeed * Time.deltaTime);
         }
         else
@@ -64,6 +64,7 @@ public class Enemy : MonoBehaviour
         //Instantiate(particles, transform.position, Quaternion.identity);
 
     }
+    
 
     /// <summary>
     /// flashes red on hit and reverts
