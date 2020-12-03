@@ -35,10 +35,13 @@ public class DoorTrigger : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             door.OpenDoor();
+
         }
         else if (collision.CompareTag("Player"))
         {
             door.OpenDoor();
+            FindObjectOfType<AudioManager>().Play("DoorUnlock");
+
         }
     }
 

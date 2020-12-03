@@ -30,6 +30,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 Instantiate(attackParticles, attackPosition.position, Quaternion.identity);
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, whatIsEnemy);
+                FindObjectOfType<AudioManager>().Play("Damage");
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<Enemy>().TakeDamage (damage, 0.1f);

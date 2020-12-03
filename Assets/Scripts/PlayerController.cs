@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
         if (isJumpPressed && isOnGround)
         {
             playerRigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            FindObjectOfType<AudioManager>().Play("Jump");
+
         }
         if (Input.GetKey(KeyCode.J))
         {

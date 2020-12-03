@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7830926616924824662, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7830926616924824662, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3718408706811984020, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -81,7 +91,8 @@ PrefabInstance:
     - target: {fileID: 6916888454295997786, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
         type: 3}
       propertyPath: m_Name
-      value: fly
+      value: fly Up2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1180445760416215066, guid: f39f58346b7aa0c47a7a9ee43c0e7d87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f39f58346b7aa0c47a7a9ee43c0e7d87, type: 3}
