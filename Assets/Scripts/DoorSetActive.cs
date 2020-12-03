@@ -13,6 +13,7 @@ public class DoorSetActive : MonoBehaviour, IDoor
     public void OpenDoor()
     {
         gameObject.SetActive(false);
+
         //door.transform.position = new Vector2(position.x,position.y +4);
     }
 
