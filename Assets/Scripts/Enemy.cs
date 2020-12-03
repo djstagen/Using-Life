@@ -61,10 +61,12 @@ public class Enemy : MonoBehaviour
         health -= damage;
         Debug.Log("damage was dealt to enemy");
         FlashRed();
+        FindObjectOfType<AudioManager>().Play("EnemyHit");
+
         //Instantiate(particles, transform.position, Quaternion.identity);
 
     }
-    
+
 
     /// <summary>
     /// flashes red on hit and reverts

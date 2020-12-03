@@ -284,7 +284,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &211934640
 PrefabInstance:
@@ -484,7 +484,7 @@ Transform:
   m_Children:
   - {fileID: 1433303649}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &299217381 stripped
 SpriteRenderer:
@@ -1092,7 +1092,7 @@ PrefabInstance:
     - target: {fileID: 3718408706811984020, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3718408706811984020, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
         type: 3}
@@ -1201,7 +1201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1100495222 stripped
 GameObject:
@@ -1291,7 +1291,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1122664189
 MonoBehaviour:
@@ -1475,7 +1475,7 @@ PrefabInstance:
     - target: {fileID: 3718408706811984020, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3718408706811984020, guid: f39f58346b7aa0c47a7a9ee43c0e7d87,
         type: 3}
@@ -1627,21 +1627,33 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: Damage
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 7982202b915689f4cb9499dfb38d2e4c, type: 3}
     volume: 0.55
-    pitch: 1
+    pitch: 0.53
     loop: 0
     source: {fileID: 0}
   - name: Revive
-    clip: {fileID: 0}
-    volume: 0.55
+    clip: {fileID: 8300000, guid: a5c8e5b339c16a1479d35d1b82827a5f, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Jump
-    clip: {fileID: 0}
-    volume: 0.55
-    pitch: 1
+    clip: {fileID: 8300000, guid: 7982202b915689f4cb9499dfb38d2e4c, type: 3}
+    volume: 0.251
+    pitch: 2.33
+    loop: 0
+    source: {fileID: 0}
+  - name: ButtonPress
+    clip: {fileID: 8300000, guid: 04e080328292deb4887a93b212f6ed95, type: 3}
+    volume: 0.251
+    pitch: 2.33
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyHit
+    clip: {fileID: 8300000, guid: 838bf47efd6903f4681cfd15f2f998ee, type: 3}
+    volume: 0.251
+    pitch: 2.33
     loop: 0
     source: {fileID: 0}
 --- !u!4 &1401039075
@@ -44642,6 +44654,11 @@ PrefabInstance:
       propertyPath: flashTime
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 4739041801804227858, guid: 91ba1c788391ac142af63eb606042b7a,
+        type: 3}
+      propertyPath: health
+      value: 33
+      objectReference: {fileID: 0}
     - target: {fileID: 4739041801804227859, guid: 91ba1c788391ac142af63eb606042b7a,
         type: 3}
       propertyPath: m_Mass
@@ -44699,7 +44716,7 @@ PrefabInstance:
     - target: {fileID: 3393284031587431410, guid: 698752dda30bc6d4f9202020ec72cf5c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3393284031587431410, guid: 698752dda30bc6d4f9202020ec72cf5c,
         type: 3}
@@ -44887,7 +44904,7 @@ Transform:
   m_Children:
   - {fileID: 568319628}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1780709005
 PrefabInstance:
@@ -44967,6 +44984,11 @@ PrefabInstance:
       propertyPath: sRenderer
       value: 
       objectReference: {fileID: 299217381}
+    - target: {fileID: 4739041801804227858, guid: 91ba1c788391ac142af63eb606042b7a,
+        type: 3}
+      propertyPath: health
+      value: 33
+      objectReference: {fileID: 0}
     - target: {fileID: 4739041801804227859, guid: 91ba1c788391ac142af63eb606042b7a,
         type: 3}
       propertyPath: m_Mass
@@ -45277,7 +45299,7 @@ PrefabInstance:
     - target: {fileID: 7342135152204375753, guid: 2a71359aa5f8713499a2042388b813b8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7342135152204375753, guid: 2a71359aa5f8713499a2042388b813b8,
         type: 3}
@@ -45574,7 +45596,7 @@ PrefabInstance:
     - target: {fileID: 5170487661328418980, guid: 70923dd700f3e5748a81ceccde2d77da,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5170487661328418980, guid: 70923dd700f3e5748a81ceccde2d77da,
         type: 3}
