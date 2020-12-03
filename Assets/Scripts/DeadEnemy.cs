@@ -15,6 +15,8 @@ public class DeadEnemy : MonoBehaviour
         {
             Destroy(gameObject);
             Instantiate(revivedEnemy, transform.position, Quaternion.identity);
+
+            FindObjectOfType<AudioManager>().Play("Revive");
         }
     }
 
