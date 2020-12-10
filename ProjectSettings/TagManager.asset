@@ -17,7 +17,7 @@ TagManager:
   - 
   - Enemy
   - DeadEnemy
-  - 
+  - Player
   - 
   - 
   - 
@@ -43,12 +43,15 @@ TagManager:
   - name: Background
     uniqueID: 541929787
     locked: 0
+  - name: Objects
+    uniqueID: 3706586911
+    locked: 0
+  - name: Enemy
+    uniqueID: 312513057
+    locked: 0
   - name: Player
     uniqueID: 1054290617
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Objects
-    uniqueID: 3706586911
     locked: 0
