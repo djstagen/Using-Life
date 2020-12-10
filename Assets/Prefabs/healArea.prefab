@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5534608062106597024}
   - component: {fileID: -4725356054756907256}
   m_Layer: 0
-  m_Name: brickGrey
+  m_Name: healArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 540823785192218009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 93.229805, y: -1.5524246, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
