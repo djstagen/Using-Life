@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private float timeAttackCD;
+    private float cooldownTimer;
     public float startAttacktime;
 
     public Transform attackPosition;
@@ -24,7 +24,7 @@ public class PlayerAttack : MonoBehaviour
         /// </summary>
     private void Update()
     {
-        if (timeAttackCD <= 0)
+        if (cooldownTimer <= 0)
         {
             if(Input.GetKey(KeyCode.J))
             {
@@ -38,11 +38,11 @@ public class PlayerAttack : MonoBehaviour
 
                 }
             }
-            timeAttackCD = startAttacktime;
+            cooldownTimer = startAttacktime;
         }
         else
         {
-            timeAttackCD -= Time.deltaTime;
+            cooldownTimer -= Time.deltaTime;
         }
     }
     private void OnDrawGizmosSelected()
