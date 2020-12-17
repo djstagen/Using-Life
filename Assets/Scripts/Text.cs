@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class Text : MonoBehaviour
 {
-    public GameObject uiObject;
+    public Text uiObject;
 
-    private void Start()
+    public void Start()
     {
-        uiObject.SetActive(false);
+        uiObject.Start();
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        uiObject.SetActive(true);
+        uiObject.Start();
     }
 }
