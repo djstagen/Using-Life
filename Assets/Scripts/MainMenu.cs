@@ -17,6 +17,14 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    public void GithubLink()
+    {
+        
+        Application.OpenURL("https://github.com/djstagen/Using-Life/edit/main/README.md");
+        
+        
+    }
+
     public void QuitGame()
     {
         Application.Quit();
