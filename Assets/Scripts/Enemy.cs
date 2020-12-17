@@ -99,5 +99,11 @@ public class Enemy : MonoBehaviour
                 MoveLeft = true;
             }
         }
+        if(other.gameObject.CompareTag("stop"))
+        {
+            ySpeed = 0;
+        }
     }
+
+
 }
